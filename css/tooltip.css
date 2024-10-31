@@ -1,0 +1,100 @@
+.tooltip i{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 0;
+    margin-left: -86px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-icon{
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border-radius: 50%;
+}
+
+#wc-seamless-check-form .input-text {
+    padding: 0.6180469716em;
+    background-color: #ffffff;
+    color: #43454b;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    font-weight: normal;
+/*    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);*/
+     border: 1px solid #f2f2f2;
+}
+
+#wc-seamless-check-form .form-row.woocommerce-invalid input.input-text {
+    box-shadow: inset 2px 0 0 #e2401c;
+}
+
+#wc-seamless-check-form .form-row.woocommerce-validated input.input-text {
+    box-shadow: inset 2px 0 0 #0f834d;
+}
+
+@media (min-width: 768px){
+
+    .form-row-last {
+        width: 47.0588235294%;
+        float: right;
+        margin-right: 0;
+    }
+
+    .form-row-first {
+        width: 47.0588235294%;
+        float: left;
+        margin-right: 5.8823529412%;
+        clear: both;
+    }
+}
+
+.woocommerce-form__select{
+    width: 100% !important;
+    padding: 0.6180469716em;
+    background-color: #ffffff;
+    color: #43454b;
+    box-sizing: border-box;
+    font-weight: normal;
+/*    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);*/
+     border: 1px solid #f2f2f2;
+    
+}
+
+
+/*#wc-seamless-check-form .form-row.woocommerce-invalid input.input-text {
+    box-shadow: inset 2px 0 0 #e2401c;
+}*/
